@@ -1,0 +1,416 @@
+/*-----------Existing classes---------------*/
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th { background-color: lightblue; }
+
+.table td { text-align: center; }
+
+.table th { text-align: center; }
+
+table { border-radius: 10px; }
+
+
+
+.tabs .media img { float: left; }
+
+
+/* Fixa till hur det ser ut när man väljer en tab. Kontrast. 
+I Boostrap css Overridas Background color.
+Test dig fram med hjälp av Browsern. Klicka på css filen och ändra properties
+Ändra utseende på tabs när de är klickade och när musen är hoover.*/
+
+/*tabs*/
+
+.tabs { padding-top: 45px; }
+
+.tabs ul { margin-bottom: 0; }
+
+.tabs ul li {
+    color: #3e3c4a;
+    font-family: 'Montserrat;, sans-serif;';
+    font-size: 17px;
+    line-height: 32px;
+}
+
+.tabs .media {
+    padding-bottom: 38px; /*30px*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.tabs .media img { float: left; }
+
+.tabs .media .media-body [class^="fw-icon-"] { color: #3e3c4a; }
+
+.tabs .media h1 {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/*margin: 25px*/
+
+
+
+
+.tab-content { background: #cfced3; }
+
+.nav-tabs li {
+    border: none;
+    border-radius: none;
+}
+
+.nav-tabs { border-bottom: none; }
+
+/*Styling av inaktiv TAB*/
+
+.nav-tabs > li > a {
+    background-color: #f7f7ae !important;
+    border-bottom: 1px solid #caca9c;
+    border-right: 4px solid #caca9c;
+    border-top: 4px solid #caca9c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 5px;
+    padding: 20px;
+}
+
+/*Avsluta med !important För att byta färg på IAKTIV flik*/
+
+/*Styling av INAKTIV TAB när man Hovrar med musen på den TABBEN;*/
+
+.nav-tabs > li > a:hover {
+    background-color: #f9f968 !important;
+    border-color: #caca9c !important;
+}
+
+/*Styling av INAKTIV TAB Text när man Hovrar med musen på den TABBEN;*/
+
+/*.nav-tabs a:hover{color: black; background: #e9e7ee; font-size: 105%; text-transform: uppercase;}*/
+
+/*Font-size animation på TAB text vid hover*/
+
+/*Styling av AKTIV TAB*/
+
+.nav-tabs > .active > a {
+    background: #cfced3;
+    background-color: #acf5ef !important;
+    border: none;
+    border-radius: none;
+    border-top: 10px solid #f76e5d;
+}
+
+/*Styling AV AKTIV TAB när man HOVRAR över den*/
+
+.nav-tabs > .active > a:hover {
+    background-color: #acf5ef !important;
+    background-color: none !important;
+    border: none;
+    border-bottom: none;
+    border-top: 4px solid #f76e5d;
+}
+
+/*Styling av TEXT på TABBEN*/
+
+.nav-tabs a {
+    background: #e9e7ee;
+    color: #919097;
+    text-transform: uppercase;
+}
+
+
+/*.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    border-color: Black !important;
+    background-color: white !important;
+}*/
+
+/*.nav-tabs > li > a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    margin-right: 5px;
+    border-top: 4px solid #798584;
+    border-bottom: 1px solid #cfced3;
+}*/
+
+/*Ändrar färg och utseende på Inehållet som visas*/
+
+.tab-content {
+    /*Tab content bakground*/
+    background: #acf5ef;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 7px solid #8af1e8;
+    border-top: 4px solid #8af1e8;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+/*Tabs Responsive*/
+
+/*Media Query*/
+
+
+
+
+
+@media (max-width: 768px) {
+    .bilder { width: 162px !important; }
+
+
+
+    #agileinfodetails { display: none; }
+
+    /* Gömmer Parallax bilder om skärmen är mindre än 768px */
+}
+
+/*425px;*/
+
+@media (max-width: 1200px) {
+    .tabs { padding: 30px 0 !important; }
+
+    .tabs .media { padding: 30px !important; }
+
+    .tabs .media img {
+        float: none !important;
+        width: 50% !important;
+    }
+
+    .tabs .media h1 { margin-bottom: 15px !important; }
+
+    .tabs .media .media-body { padding-top: 30px !important; }
+
+    .tabs .media { padding: 20px 20px !important; }
+
+    .tabs ul li { width: 100% !important; }
+
+    .tabs ul li a {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding: 15px !important;
+    }
+
+    .tabs .media h1 {
+        font-size: 29px !important;
+        line-height: 22px !important;
+    }
+
+    #föräldraBarn, #avIgenridning { line-height: 28px !important; }
+
+    .nav-tabs > li > a { margin-right: 0px !important; }
+
+    .bilder { margin: 0 0 0 7px; }
+
+    .tabs .media img {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .nav > li { padding: 0px 0px 6px; }
+
+    .media-body { padding-left: 0px !important; }
+
+    .vcard { padding-left: 24px !important; }
+
+    /*justera galleria sidor*/
+    .w3portfolioaits { padding: 75px 40px 15px 40px !important; }
+}
+
+@media screen and (max-width: 320px) {
+    #hurGårDetTill { line-height: 28px !important; }
+}
+
+@media (min-width: 735px) {
+    .ResponsiveImgWidth { width: 10%; }
+}
+
+/*Custom classes*/
+
+/*Så att det blir ett mellanrum mellan bild och text. Får se om det funka i längden*/
+
+/*.spacing-r {
+  
+}*/
+
+/*Så att det blir ett mellanrum mellan bild och text
+justera beroende på bild*/
+
+.media-body { padding-left: 30px; }
+
+.imgRadius { border-radius: 10px; }
+
+hr { width: 100%; }
+
+.customlärare {
+    border: 1px solid #B34DB0;
+    margin: 10px;
+    padding: 2px;
+    width: 20% !important;
+}
+
+
+
+/*Så att Table under Lektioner hamnar centrerat*/
+
+#mediaBodyTable { padding: 0px; }
+
+.vcard {
+    font-size: 1.5em !important;
+    padding-left: 60px;
+    vertical-align: middle;
+}
+
+/*Ta bort om HR inte används*/
+
+.vcard hr {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.vcard a { color: #cd2cc4; }
+
+.vcard a:hover {
+    /*background-color: white;*/
+    color: white;
+    font-size: 110%;
+}
+
+.w3portfolioaits hr { width: 100%; }
+
+/*justera galleria sidor*/
+
+.w3portfolioaits { padding: 75px 60px 15px 60px; }
+
+.tabs .media-body .diffrentFont { font-size: 18px; }
+
+#Anmälan a:hover {
+    color: white;
+    padding-left: 30px;
+}
+
+#Anmälan a { color: #cd2cc4; }
+
+
+
+#Länkar .vcard1 a:hover {
+    color: white;
+    padding-left: 30px;
+}
+
+.vcard1 {
+    font-size: 1.5em !important;
+    vertical-align: middle;
+}
+
+.vcard1 a { color: #cd2cc4; }
+
+/*TA bort när mer text kommer*/
+
+.tabs #Betalning, #AvbokningIgenridning p { text-align: center; }
+
+
+.logoResponsive { width: 60%; }
+
+.ResponsiveImgWidth { width: 25%; }
+
+
+
+/*Nav animationen*/
+
+nav ul li a {
+    -webkit-animation-direction: alternate;
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: NavText; /* Safari 4.0 - 8.0 */
+    /*animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;*/
+    animation: NavText 10s infinite alternate;
+    animation-name: NavText;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes NavText {
+    from { color: black; }
+
+    to { color: white; }
+}
+
+/* Standard syntax */
+
+@keyframes NavText {
+    /*from {color: black;}
+        to {color: white;}*/
+    0% { color: #47a0fa; }
+
+    25% { color: #FFD269; }
+
+    50% { color: red; }
+
+    75% { color: purple; }
+
+    100% { color: #FFA59C; }
+}
+
+
+
+.AvtalPositionRight {
+    margin-right: 0.5em;
+    float: right
+}
+.SubmitPositionLeft {
+    float: left;
+    margin-right: 0.5em;
+    margin-top: 1.5em;
+}
+.AvtalPositionLeft {
+    float: left;
+    margin-top: 1.5em;
+
+}
+.submitRightPosition {
+  float: left
+}
+
+.SubmitPositionRight {
+    float: right;
+}
+.underTableText {
+    font-size: 150%;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Gammal kod till texten under tabelen*/
+/*.customLabel {
+    /border-radius: .25em;
+    color: #000;
+    display: inline;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 1;
+    padding: .2em .6em .3em;
+    text-align: left;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+}*/
+@media only screen and (max-width: 320px) {
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 4px;
+    }
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+
+
